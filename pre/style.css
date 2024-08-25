@@ -1,0 +1,72 @@
+body {
+    padding:0;
+    margin:0;
+}
+
+button {
+	cursor: pointer;
+}
+
+.top {
+	display:flex;
+	background-color:darkgreen;
+	margin: 0px 0px 0px 0px;
+	padding: 5px 5px 5px 5px;
+}
+
+.emaillink {
+	font-family:arial;
+	color:white;
+}
+
+.navbar {
+	display:flex;
+	background-color:lightblue;
+	margin: 0px 0px 0px 0px;
+}
+
+.menubutton {
+	background:none;
+	border:none;
+	width:15%;
+	font-family:arial;
+	font-size:18px;
+	color:darkgreen;
+}
+.menubutton:hover {
+	background-color:#c4e3ed;
+}
+
+.langmenu {
+	display:flex;
+	position:absolute;
+	right:5px;
+	top:5px;
+}
+
+#logo {
+	width:20%;
+	margin-left:5%;
+	margin-right:5%;
+}
+
+#copcv {
+	
+}
+
+#es {
+	background-image:url("img/esp.png");
+	background-size:100%;
+	width:30px;
+	height:20px;
+	border:none;
+	margin-right:5px;
+}
+
+#en {
+	background-image:url("img/uk.png");
+	background-size:100%;
+	width:30px;
+	height:20px;
+	border:none;
+}
