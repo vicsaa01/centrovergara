@@ -1,34 +1,65 @@
 import React from 'react'
 
-const Navbar = () => {
-    return(
-        <nav class="navbar w-100 p-0" id="nav1">
-            <div class="row">
-                <div class="d-none d-sm-block col-lg-2 col-md-3 col-sm-4 col-xs-12">
-                    <a class="btn border-0" href="/"><img src='logo.png' alt='CentroVergara Logo' id='logo'/></a>
-                </div>
+const Navbar = (props) => {
+    if (props.lang == 'es') {
+        return(
+            <nav class="navbar w-100 p-0" id="nav1">
+                <div class="row">
+                    <div class="d-none d-sm-block col-lg-2 col-md-3 col-sm-4 col-xs-12">
+                        <a class="btn border-0" href="/es"><img src='/logo.png' alt='Logo del Centro Vergara' id='logo'/></a>
+                    </div>
 
-                <div class="d-block d-sm-none col-lg-2 col-md-3 col-sm-4 col-xs-6">
-                    <a class="d-flex justify-content-center align-items-center btn border-0" href="/"><img src='logo.png' alt='CentroVergara Logo' id='logo-mini'/></a>
-                </div>
+                    <div class="d-block d-sm-none col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                        <a class="d-flex justify-content-center align-items-center btn border-0" href="/es"><img src='/logo.png' alt='Logo del Centro Vergara' id='logo-mini'/></a>
+                    </div>
 
-                <div class="col-lg-2 col-md-1 col-sm-0 col-xs-0"></div>
+                    <div class="col-lg-2 col-md-1 col-sm-0 col-xs-0"></div>
 
-                <div class="col-lg-2 col-md-2 col-sm-3 col-xs-6">
-                    <a class="d-flex justify-content-center align-items-center btn h-100 border-0 navbar-button" href="/appoint">APPOINTMENTS</a>
+                    <div class="col-lg-2 col-md-2 col-sm-3 col-xs-6">
+                        <a class="d-flex justify-content-center align-items-center btn h-100 border-0 navbar-button" href="/es/appoint">CITAS</a>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-3 col-xs-6">
+                        <a class="d-flex justify-content-center align-items-center btn h-100 border-0 navbar-button" href="/es/audio">AUDIOS</a>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-3 col-xs-6">
+                        <a class="d-flex justify-content-center align-items-center btn h-100 border-0 navbar-button" href="/es/about">SOBRE EL CENTRO</a>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-3 col-xs-6">
+                        <a class="d-flex justify-content-center align-items-center btn h-100 border-0 navbar-button" href="/es/contact">CONTACTO</a>
+                    </div>
                 </div>
-                <div class="col-lg-2 col-md-2 col-sm-3 col-xs-6">
-                    <a class="d-flex justify-content-center align-items-center btn h-100 border-0 navbar-button" href="/audio">AUDIOS</a>
+            </nav>
+        )
+    } else {
+        return(
+            <nav class="navbar w-100 p-0" id="nav1">
+                <div class="row">
+                    <div class="d-none d-sm-block col-lg-2 col-md-3 col-sm-4 col-xs-12">
+                        <a class="btn border-0" href="/"><img src='logo.png' alt='CentroVergara Logo' id='logo'/></a>
+                    </div>
+
+                    <div class="d-block d-sm-none col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                        <a class="d-flex justify-content-center align-items-center btn border-0" href="/"><img src='logo.png' alt='CentroVergara Logo' id='logo-mini'/></a>
+                    </div>
+
+                    <div class="col-lg-2 col-md-1 col-sm-0 col-xs-0"></div>
+
+                    <div class="col-lg-2 col-md-2 col-sm-3 col-xs-6">
+                        <a class="d-flex justify-content-center align-items-center btn h-100 border-0 navbar-button" href="/appoint">APPOINTMENTS</a>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-3 col-xs-6">
+                        <a class="d-flex justify-content-center align-items-center btn h-100 border-0 navbar-button" href="/audio">AUDIOS</a>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-3 col-xs-6">
+                        <a class="d-flex justify-content-center align-items-center btn h-100 border-0 navbar-button" href="/about">ABOUT</a>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-3 col-xs-6">
+                        <a class="d-flex justify-content-center align-items-center btn h-100 border-0 navbar-button" href="/contact">CONTACT</a>
+                    </div>
                 </div>
-                <div class="col-lg-2 col-md-2 col-sm-3 col-xs-6">
-                    <a class="d-flex justify-content-center align-items-center btn h-100 border-0 navbar-button" href="/about">ABOUT</a>
-                </div>
-                <div class="col-lg-2 col-md-2 col-sm-3 col-xs-6">
-                    <a class="d-flex justify-content-center align-items-center btn h-100 border-0 navbar-button" href="/contact">CONTACT</a>
-                </div>
-            </div>
-        </nav>
-    )
+            </nav>
+        )
+    }
 }
 
 export default Navbar

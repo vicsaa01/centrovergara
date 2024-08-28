@@ -1,42 +1,51 @@
 import React from 'react'
 
+import Navbar from '../components/Navbar'
+import Footer from '../components/Footer'
+
 const AppointPage = () => {
     return(
-        <main class="w-100 m-0 p-0">
-            <div class="row">
-                <h3 class="mt-5 text-center">Make an appointment</h3>
-            </div>
+        <>
+            <Navbar></Navbar>
 
-            <div class="row mt-3"></div>
-            <div class="row mt-3"></div>
-            <div class="row mt-3"></div>
-            <div class="row mt-3"></div>
-            <div class="row mt-3"></div>
+            <main class="w-100 m-0 p-0">
+                <div class="row">
+                    <h3 class="mt-5 text-center">Make an appointment</h3>
+                </div>
 
-            <div class="row mt-3"></div>
-            <div class="row mt-3"></div>
-            <div class="row mt-3"></div>
-            <div class="row mt-3"></div>
-            <div class="row mt-3"></div>
+                <div class="row mt-3"></div>
+                <div class="row mt-3"></div>
+                <div class="row mt-3"></div>
+                <div class="row mt-3"></div>
+                <div class="row mt-3"></div>
 
-            <div class="row mt-3"></div>
-            <div class="row mt-3"></div>
-            <div class="row mt-3"></div>
-            <div class="row mt-3"></div>
-            <div class="row mt-3"></div>
+                <div class="row mt-3"></div>
+                <div class="row mt-3"></div>
+                <div class="row mt-3"></div>
+                <div class="row mt-3"></div>
+                <div class="row mt-3"></div>
 
-            <div class="row mt-3"></div>
-            <div class="row mt-3"></div>
-            <div class="row mt-3"></div>
-            <div class="row mt-3"></div>
-            <div class="row mt-3"></div>
+                <div class="row mt-3"></div>
+                <div class="row mt-3"></div>
+                <div class="row mt-3"></div>
+                <div class="row mt-3"></div>
+                <div class="row mt-3"></div>
 
-            <div class="row mt-3"></div>
-            <div class="row mt-3"></div>
-            <div class="row mt-3"></div>
-            <div class="row mt-3"></div>
-            <div class="row mt-3"></div>
-        </main>
+                <div class="row mt-3"></div>
+                <div class="row mt-3"></div>
+                <div class="row mt-3"></div>
+                <div class="row mt-3"></div>
+                <div class="row mt-3"></div>
+
+                <div class="row mt-3"></div>
+                <div class="row mt-3"></div>
+                <div class="row mt-3"></div>
+                <div class="row mt-3"></div>
+                <div class="row mt-3"></div>
+            </main>
+
+            <Footer></Footer>
+        </>
     )
 }
 

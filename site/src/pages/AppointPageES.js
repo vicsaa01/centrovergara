@@ -3,14 +3,14 @@ import React from 'react'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 
-const ContactPage = () => {
+const AppointPageES = () => {
     return(
         <>
-            <Navbar></Navbar>
+            <Navbar lang='es'></Navbar>
 
             <main class="w-100 m-0 p-0">
                 <div class="row">
-                    <h3 class="mt-5 text-center">Contact Centro Vergara</h3>
+                    <h3 class="mt-5 text-center">Pedir una cita</h3>
                 </div>
 
                 <div class="row mt-3"></div>
@@ -49,4 +49,4 @@ const ContactPage = () => {
     )
 }
 
-export default ContactPage
+export default AppointPageES
