@@ -11,3 +11,19 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.navbar-button:hover {
+  color: white;
+}
+
+#nav1, #foot {
+  background-color: rgb(156, 218, 212);
+}
+
+#logo {
+  width: 100%;
+}
+
+#logo-mini {
+  width: 50%;
+}
