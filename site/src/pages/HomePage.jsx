@@ -1,13 +1,8 @@
-import React from 'react'
-
-import Navbar from '../components/Navbar'
-import Footer from '../components/Footer'
+import React from 'react';
 
 const HomePage = () => {
     return(
         <>
-            <Navbar></Navbar>
-
             <main class="w-100 m-0 p-0">
 
                 <div class="row m-5 p-3 border border-1 border-dark rounded">
@@ -52,10 +47,8 @@ const HomePage = () => {
                 <div class="row mt-3"></div>
                 <div class="row mt-3"></div>
             </main>
-            
-            <Footer></Footer>
         </>
-    )
+    );
 }
 
-export default HomePage
+export default HomePage;
